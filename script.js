@@ -26,7 +26,11 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
+<img
+  src="/banner.jpg"
+  alt="आर.व्ही मल्टीसर्व्हिसेस"
+  className="w-full rounded-3xl"
+/>
 function showMessage() {
   alert('धन्यवाद! तुमची चौकशी नोंदवली आहे. लाईव्ह व्हर्जनमध्ये हा फॉर्म WhatsApp किंवा Email ला जोडता येईल.');
 }
