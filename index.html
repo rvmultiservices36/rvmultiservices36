@@ -1,421 +1,159 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>आर व्ही मल्टी सर्विसेस</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RV Multiservices</title>
 
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial;
-    }
-
-    body{
-      background:#f5f7fb;
-    }
-
-    .topbar{
-      background:#dc2626;
-      color:white;
-      text-align:center;
-      padding:12px;
-      font-weight:bold;
-      font-size:18px;
-    }
-
-    header{
-      background:linear-gradient(135deg,#0B2C6B,#1d4ed8);
-      color:white;
-      text-align:center;
-      padding:60px 20px;
-      position:relative;
-      overflow:hidden;
-    }
-
-    header h1{
-      font-size:60px;
-      margin-bottom:10px;
-    }
-
-    header h2{
-      color:#facc15;
-      margin-bottom:20px;
-      font-size:30px;
-    }
-
-    header p{
-      margin-top:10px;
-      font-size:20px;
-    }
-
-    .buttons{
-      margin-top:35px;
-    }
-
-    .buttons a{
-      text-decoration:none;
-      padding:16px 35px;
-      margin:10px;
-      display:inline-block;
-      border-radius:15px;
-      font-size:20px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .call-btn{
-      background:#2563eb;
-      color:white;
-    }
-
-    .whatsapp-btn{
-      background:#16a34a;
-      color:white;
-    }
-
-    .buttons a:hover{
-      transform:scale(1.05);
-    }
-
-    .services{
-      padding:70px 20px;
-    }
-
-    .services h2{
-      text-align:center;
-      font-size:45px;
-      color:#0B2C6B;
-      margin-bottom:50px;
-    }
-
-    .service-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      max-width:1400px;
-      margin:auto;
-    }
-
-    .card{
-      background:white;
-      padding:35px;
-      border-radius:25px;
-      text-align:center;
-      box-shadow:0 10px 30px rgba(0,0,0,0.1);
-      border:2px solid #dbeafe;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-    }
-
-    .card h3{
-      font-size:25px;
-      color:#0B2C6B;
-      margin-top:15px;
-    }
-
-    .counter-section{
-      background:#0B2C6B;
-      padding:70px 20px;
-      color:white;
-    }
-
-    .counter-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      max-width:1300px;
-      margin:auto;
-    }
-
-    .counter{
-      background:white;
-      color:#0B2C6B;
-      padding:40px;
-      border-radius:25px;
-      text-align:center;
-      font-weight:bold;
-    }
-
-    .counter h1{
-      font-size:55px;
-      color:#f59e0b;
-    }
-
-    .form-section{
-      padding:70px 20px;
-      background:white;
-    }
-
-    .form-box{
-      max-width:700px;
-      margin:auto;
-      background:#f8fafc;
-      padding:40px;
-      border-radius:25px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    }
-
-    .form-box h2{
-      text-align:center;
-      color:#0B2C6B;
-      margin-bottom:30px;
-      font-size:40px;
-    }
-
-    input,select,textarea{
-      width:100%;
-      padding:18px;
-      margin-bottom:20px;
-      border-radius:12px;
-      border:1px solid #cbd5e1;
-      font-size:18px;
-    }
-
-    button{
-      width:100%;
-      background:#0B2C6B;
-      color:white;
-      padding:18px;
-      border:none;
-      border-radius:15px;
-      font-size:22px;
-      font-weight:bold;
-      cursor:pointer;
-    }
-
-    .map-section{
-      padding:70px 20px;
-    }
-
-    .map-section h2{
-      text-align:center;
-      color:#0B2C6B;
-      font-size:45px;
-      margin-bottom:35px;
-    }
-
-    iframe{
-      width:100%;
-      border:none;
-      border-radius:25px;
-      height:450px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    }
-
-    footer{
-      background:#0B2C6B;
-      color:white;
-      text-align:center;
-      padding:40px;
-      margin-top:50px;
-    }
-
-    footer h2{
-      margin-bottom:15px;
-      font-size:35px;
-    }
-
-    @media(max-width:768px){
-
-      header h1{
-        font-size:40px;
-      }
-
-      .services h2,
-      .map-section h2{
-        font-size:32px;
-      }
-
-    }
-
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<div class="topbar">
-🎉 CSC Government Portal | Banking | Online Forms | Medicine Available 🎉
-</div>
+  <!-- TOP HEADER -->
 
-<header>
+  <header class="top-header">
 
-  <h1>आर व्ही मल्टी सर्विसेस</h1>
+    <div class="left-area">
 
-  <h2>SBI बँक ग्राहक सेवा केंद्र</h2>
+      <p class="owner">प्रो.प्रा. आदिनाथ मुळे</p>
 
-  <p>प्रोप्रायटर : आदिनाथ मुळे</p>
+      <p class="mobile">📞 Mo-8605943636</p>
 
-  <p>मोबाईल : 8605 94 36 36</p>
+      <h1>
+        <span>आर.व्ही</span><br>
+        मल्टीसर्विसेस
+      </h1>
 
-  <p>
-    साक्षी मेडिकल अँड कॉर्नर,
-    संत सावता माळी चौक,
-    मोंढा रोड, बीड
-  </p>
+      <h2>SBI बँक ग्राहक सेवा केंद्र</h2>
 
-  <div class="buttons">
-
-    <a href="tel:+918605943636" class="call-btn">
-      कॉल करा
-    </a>
-
-    <a
-      href="https://api.whatsapp.com/send?phone=918605943636"
-      target="_blank"
-      class="whatsapp-btn"
-    >
-      WhatsApp
-    </a>
-
-  </div>
-
-</header>
-
-<section class="services">
-
-  <h2>सर्व प्रकारच्या ऑनलाईन सेवा येथे उपलब्ध</h2>
-
-  <div class="service-grid">
-
-    <div class="card">
-      🪪
-      <h3>आधार सेवा</h3>
     </div>
 
-    <div class="card">
-      💳
-      <h3>पॅन कार्ड</h3>
+    <div class="right-area">
+
+      <div class="logo-circle">
+        <h3>RV</h3>
+        <p>SBI</p>
+      </div>
+
     </div>
 
-    <div class="card">
-      📄
-      <h3>उत्पन्न दाखला</h3>
+  </header>
+
+  <!-- ICON BOXES -->
+
+  <section class="icon-section">
+
+    <div class="icon-box">🏦<br>खाते उघडणे</div>
+
+    <div class="icon-box">💸<br>रोख व्यवहार</div>
+
+    <div class="icon-box">🪪<br>आधार सेवा</div>
+
+    <div class="icon-box">📱<br>मोबाईल रिचार्ज</div>
+
+    <div class="icon-box">💰<br>बिल पेमेंट</div>
+
+    <div class="icon-box">📄<br>इतर सेवा</div>
+
+  </section>
+
+  <!-- TAGLINE -->
+
+  <section class="tagline">
+
+    वेगवान सेवा • विश्वासाची नाती • आपल्या सेवेत सदैव तत्पर
+
+  </section>
+
+  <!-- ADDRESS -->
+
+  <section class="address">
+
+    📍 साक्षी मेडिकल & कॉर्नर | संत सावता माळी चौक, बीड - 431122
+
+  </section>
+
+  <!-- MENU -->
+
+  <nav>
+
+    <a href="#">HOME</a>
+
+    <a href="#">SERVICES</a>
+
+    <a href="#">BANKING SERVICES</a>
+
+    <a href="#">LOAN SERVICES</a>
+
+    <a href="#">CONTACT</a>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-left">
+
+      <h2>सर्व सेवा एकाच ठिकाणी !</h2>
+
+      <p>
+        बँकिंग, शासकीय सेवा, बिल पेमेंट,
+        ऑनलाइन अर्ज आणि अनेक सुविधा.
+      </p>
+
+      <button>आमच्या सेवा पाहा</button>
+
     </div>
 
-    <div class="card">
-      🏛️
-      <h3>जात दाखला</h3>
+    <div class="hero-right">
+
+      <img src="banner.jpeg">
+
     </div>
 
-    <div class="card">
-      🏠
-      <h3>रहिवासी दाखला</h3>
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services">
+
+    <div class="service-card">
+      SBI बँक सेवा
     </div>
 
-    <div class="card">
-      🏦
-      <h3>AEPS सेवा</h3>
+    <div class="service-card">
+      शासकीय सेवा
     </div>
 
-    <div class="card">
-      💰
-      <h3>बँकिंग सेवा</h3>
+    <div class="service-card">
+      आधार सेवा
     </div>
 
-    <div class="card">
-      📱
-      <h3>मोबाईल रिचार्ज</h3>
+    <div class="service-card">
+      मोबाईल रिचार्ज
     </div>
 
-    <div class="card">
-      🚆
-      <h3>रेल्वे तिकीट</h3>
+    <div class="service-card">
+      बिल पेमेंट
     </div>
 
-    <div class="card">
-      🚌
-      <h3>बस तिकीट</h3>
+    <div class="service-card">
+      इन्शुरन्स सेवा
     </div>
 
-    <div class="card">
-      💊
-      <h3>औषधे उपलब्ध</h3>
+    <div class="service-card">
+      लोन सेवा
     </div>
 
-  </div>
-
-</section>
-
-<section class="counter-section">
-
-  <div class="counter-grid">
-
-    <div class="counter">
-      <h1>5000+</h1>
-      Happy Customers
+    <div class="service-card">
+      झेरॉक्स सेवा
     </div>
 
-    <div class="counter">
-      <h1>100+</h1>
-      Government Services
-    </div>
+  </section>
 
-    <div class="counter">
-      <h1>24x7</h1>
-      Support
-    </div>
-
-    <div class="counter">
-      <h1>100%</h1>
-      Trusted
-    </div>
-
-  </div>
-
-</section>
-
-<section class="form-section">
-
-  <div class="form-box">
-
-    <h2>सेवा विनंती फॉर्म</h2>
-
-    <input type="text" placeholder="तुमचे नाव">
-
-    <input type="tel" placeholder="मोबाईल नंबर">
-
-    <select>
-      <option>सेवा निवडा</option>
-      <option>आधार सेवा</option>
-      <option>पॅन कार्ड</option>
-      <option>उत्पन्न दाखला</option>
-      <option>जात दाखला</option>
-    </select>
-
-    <textarea placeholder="अधिक माहिती"></textarea>
-
-    <button>
-      Submit
-    </button>
-
-  </div>
-
-</section>
-
-<section class="map-section">
-
-  <h2>आमचे लोकेशन</h2>
-
-  <iframe
-    src="https://maps.google.com/maps?q=beed&t=&z=13&ie=UTF8&iwloc=&output=embed">
-  </iframe>
-
-</section>
-
-<footer>
-
-  <h2>आर व्ही मल्टी सर्विसेस</h2>
-
-  <p>© 2026 सर्व हक्क राखीव</p>
-
-</footer>
+  <script src="script.js"></script>
 
 </body>
 </html>
