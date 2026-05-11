@@ -1,128 +1,76 @@
 body{
-  margin:0;
-  font-family:Arial;
-  background:#f4f4f4;
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#f2f5ff;
 }
 
-.top-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:30px;
-  background:white;
+header{
+    background:#002b8f;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
 }
 
-.left-area h1{
-  font-size:90px;
-  color:#002b7f;
+header h1{
+    font-size:70px;
+    margin:0;
 }
 
-.left-area span{
-  color:#ff004c;
+header h2{
+    color:gold;
+    font-size:40px;
+    margin-top:10px;
 }
 
-.left-area h2{
-  color:#002b7f;
+header p{
+    font-size:24px;
 }
 
-.logo-circle{
-  width:300px;
-  height:300px;
-  border-radius:50%;
-  background:#002b7f;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
 }
 
-.icon-section{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  background:#002b7f;
-  padding:20px;
+.call{
+    background:#2563eb;
 }
 
-.icon-box{
-  background:white;
-  padding:20px;
-  border-radius:15px;
-  text-align:center;
-  font-weight:bold;
-}
-
-.tagline{
-  background:white;
-  text-align:center;
-  padding:15px;
-  font-size:25px;
-  font-weight:bold;
-}
-
-.address{
-  background:#8b0000;
-  color:white;
-  text-align:center;
-  padding:20px;
-  font-size:28px;
-}
-
-nav{
-  background:#001f5c;
-  padding:20px;
-  text-align:center;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:20px;
-  font-weight:bold;
-}
-
-.hero{
-  display:flex;
-  padding:40px;
-  background:white;
-}
-
-.hero-left{
-  width:50%;
-}
-
-.hero-left h2{
-  font-size:50px;
-  color:#002b7f;
-}
-
-.hero-left button{
-  background:#002b7f;
-  color:white;
-  padding:15px 30px;
-  border:none;
-  border-radius:10px;
-}
-
-.hero-right img{
-  width:100%;
-  border-radius:20px;
+.whatsapp{
+    background:#16a34a;
 }
 
 .services{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  padding:40px;
+    padding:50px;
+    text-align:center;
 }
 
-.service-card{
-  background:white;
-  padding:30px;
-  text-align:center;
-  border-radius:20px;
-  font-size:25px;
-  font-weight:bold;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.services h2{
+    font-size:50px;
+    color:#002b8f;
+    margin-bottom:40px;
+}
+
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:40px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    font-size:30px;
+    color:#002b8f;
 }
